@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Home &mdash; TeraSave </title>
+
+  <!-- ======= Favico =======-->
+  <link rel="icon" href="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 1000px;">
+  <!-- End Fav Ico -->
+
+  <!-- ======= Google Font =======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- End Google Font-->
+
+  <!-- ======= Styles =======-->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+  <!-- End Styles-->
+
+  <!-- ======= Theme Style =======-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- End Theme Style-->
+
+  <!-- ======= Apply theme =======-->
+  <script>
+    // Apply the theme as early as possible to avoid flicker
+    (function () {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+    })();
+  </script>
+
+
+  <style>
+    .social-links a:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- ======= Site Wrap =======-->
+  <div class="site-wrap">
+
+
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg relative dark">
+      <div class="container d-flex align-items-center justify-content-between">
+
+
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto" href="index.html">
+
+
+          <img class="logo dark img-fluid" src="assets/images/logo/TeraSave_logo_1536x1024.png" style="width: 100px;"
+            alt="invalid image">
+          <img class="logo light img-fluid" src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+            style="width: 100px;" alt="invalid image">
+
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+          aria-labelledby="fbs__net-navbarsLabel">
+
+
+          <div class="offcanvas-header">
+            <div class="offcanvas-header-logo">
+
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="/index.html">
+                <!-- logo dark--><img class="logo dark img-fluid"
+                  src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                  alt="invalid image">
+
+                <!-- logo light--><img class="logo light img-fluid"
+                  src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                  alt="invalid image">
+              </a>
+
+            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body align-items-lg-center">
+
+            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page"
+                  href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="/about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="/subscriptions.html">Subscriptions</a>
+              </li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="/contact.html">Contact </a>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+        <!-- End offcanvas-->
+
+        <div class="d-flex align-items-center justify-content-between"
+          style="display: flex; align-items: center; gap: 15px;">
+          <div class="" data-aos="fade-up" data-aos-delay="300">
+            <a class="btn btn-white-outline" href="#">Login</a>
+          </div>
+
+
+          <div class="ms-auto w-auto">
+            <div class="header-social d-flex align-items-center gap-1">
+              <a class="btn btn-primary py-2" href="page-contact.html">
+                Create Account
+              </a>
+
+              <!-- Toggle Button Dark and Light Mode-->
+              <a id="themeToggleBtn" href="#"><i class="bi" id="themeIcon"></i></a>
+
+              <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
+                aria-label="Toggle navigation" aria-expanded="false">
+                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="21" x2="3" y1="6" y2="6"></line>
+                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                  <line x1="17" x2="3" y1="18" y2="18"></line>
+                </svg>
+                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- ======= Main =======-->
+    <main>
+
+
+      <!-- ======= Hero =======-->
+      <section class="hero__v6 section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up"
+                    data-aos-delay="0">Agric-Finance, Reimagined.</span>
+                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Start your journey to financial
+                    security with TERASAVE</h1>
+                  <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    Revolutionizing how Nigerians save and grow their wealth through flexible,
+                    accessible savings solutions combined with direct agricultural commerce.
+                  </p>
+                  <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a class="btn"
+                      href="#">Get Started Now</a><a class="btn btn-white-outline" href="#">Learn More
+                      <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg></a>
+                  </div>
+                  <!-- <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span class="logos-title text-uppercase mb-4 d-block">Trusted by major companies worldwide</span>
+                                <div class="logos-images d-flex gap-4 align-items-center">
+                                    <img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1" style="width: 110px;">
+                                    <img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2" style="width: 80px;">
+                                    <img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3" style="width: 110px;">
+                                </div>
+                            </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-img">
+                <img class="img-card img-fluid" src="assets/images/card-expenses.png" alt="Image card"
+                  data-aos="fade-down" data-aos-delay="600">
+                <!-- <img class="img-card img-fluid" src="assets/images/img/img.jpg" alt="Image card" data-aos="fade-down" data-aos-delay="600"> -->
+                <!-- <img class="img-main img-fluid rounded-4" src="assets/images/hero-img-1-min.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div> -->
+                <img class="img-main img-fluid rounded-4" src="assets/images/img/img6.png" style="height: auto;"
+                  alt="Hero Image" data-aos="fade-in" data-aos-delay="500">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero-->
+      </section>
+
+      <!-- ======= About =======-->
+      <section class="about__v4 section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <div class="row justify-content-end">
+                <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                    data-aos-delay="0">About us</span>
+                  <!-- <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Your Trusted Partner in Financial Security</h2> -->
+                  <div data-aos="fade-up" data-aos-delay="200">
+                    <p>Welcome to Terasave, your trusted partner in building a financially secure future. We understand
+                      that traditional savings methods can sometimes feel restrictive, and accessing meaningful returns
+                      on your hard-earned money can seem complicated. That's why we've created a seamless and reliable
+                      online platform designed with you in mind.</p>
+                    <p>At Terasave, we believe that everyone should have the opportunity to grow their wealth
+                      effortlessly. Our unique approach allows you to save based on a plan that suits your financial
+                      rhythm – whether it's daily, weekly, or monthly contributions starting from as low as N1,500. </p>
+                  </div>
+                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Key Values and Vision</h4>
+                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Innovation</span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Security</span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">User-Centric Design </span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Transparency</span></li>
+                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                          class="bi bi-check"></i></span><span class="text">Empowerment</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-wrap position-relative"><img class="img-fluid rounded-4" src="assets/images/img/img8.png"
+                  alt="FreeBootstrap.net image placeholder" data-aos="fade-up" data-aos-delay="0">
+                <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"
+                      style="color: #f7c400;"></i></div>
+                  <div>
+                    <h3 class="text-uppercase fw-bold">Mission Statement</h3>
+                    <p class="fs-5 mb-0">Our mission is to empower individuals to achieve their financial goals by
+                      providing a secure, flexible, and rewarding platform for savings and investment. We are committed
+                      to making wealth creation accessible to everyone through innovative and user-friendly solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About-->
+
+      <!-- ======= Features =======-->
+      <section class="section features__v2" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                <div class="row">
+                  <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                    <div class="row">
+                      <div class="col-lg-11">
+                        <div class="h-100 flex-column justify-content-between d-flex">
+                          <div>
+                            <h2 class="mb-4">Why Choose us</h2>
+                            <p class="mb-5">Choosing a financial partner is a decision that impacts your future.
+                              Terasave is not just a savings platform; it is a comprehensive solution designed to
+                              address the interconnected challenges of financial and food security in Nigeria. Our
+                              unique, integrated approach empowers you to build wealth while simultaneously reducing
+                              your cost of living.</p>
+                          </div>
+                          <!-- <div class="align-self-start"><a class="glightbox btn btn-play d-inline-flex align-items-center gap-2" href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video"><i class="bi bi-play-fill"></i> Watch the Video</a></div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row justify-content-end">
+                      <div class="col-lg-11">
+                        <div class="row">
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="icon text-center mb-4"><i class="bi bi-person-check fs-4" vfds></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">User-Friendly Interface</h3>
+                            <p>Easy navigation with responsive design for various devices.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon text-center mb-4"><i class="bi bi-graph-up fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Financial Analytics</h3>
+                            <p>Budget tracking, expense categorization, and personalized insights.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon text-center mb-4"><i class="bi bi-headset fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Customer Support</h3>
+                            <p>24/7 service via chat, email, phone, and a detailed help center.</p>
+                          </div>
+                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon text-center mb-4"><i class="bi bi-shield-lock fs-4"></i></div>
+                            <h3 class="fs-6 fw-bold mb-3">Security Features</h3>
+                            <p>Data encryption, fraud detection, and prevention mechanisms.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features-->
+
+      <!-- ======= Pricing =======-->
+      <!-- <section class="section pricing__v2" id="pricing">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-5 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Pricing</span>
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Plan for every budget</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Experience the future of finance with our secure, efficient, and user-friendly financial services</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 rounded-4 price-table h-100">
+                  <h3>Personal</h3>
+                  <p>Choose a plan that fits your personal financial needs and start managing your finances more effectively.</p>
+                  <div class="price mb-4"><strong>$7</strong><span>/ month</span></div>
+                  <div><a class="btn" href="#">Get Started</a></div>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-5 rounded-4 price-table popular h-100">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="mb-3">Business</h3>
+                      <p>Optimize your business financial operations with our tailored business plans.</p>
+                      <div class="price mb-4"><strong class="me-1">$29</strong><span>/ month</span></div>
+                      <div><a class="btn btn-white hover-outline" href="#">Get Started</a></div>
+                    </div>
+                    <div class="col-md-6 pricing-features">
+                      <h4 class="text-uppercase fw-bold mb-3">Features</h4>
+                      <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Personalized financial insights and reports</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Priority customer support</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Access to exclusive investment opportunities</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>AI-driven financial recommendations</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      <!-- End Pricing-->
+
+      <!-- ======= How it works =======-->
+      <section class="section howitworks__v1" id="how-it-works">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">How it works</span>
+              <h2 data-aos="fade-up" data-aos-delay="100">How It Works</h2>
+              <p data-aos="fade-up" data-aos-delay="200">Our platform is designed to make managing your finances simple
+                and efficient. Follow these easy steps to get started: </p>
+            </div>
+          </div>
+          <div class="row g-md-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                data-aos="fade-up" data-aos-delay="0">
+                <div data-aos="fade-right" data-aos-delay="500"><img class="arch-line" src="assets/images/arch-line.svg"
+                    alt="FreeBootstrap.net image placeholder"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Sign Up</h3>
+                  <p>Create your account using your email or phone number. Registration takes just minutes without
+                    complex requirements.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+              <div
+                class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1100"><img class="arch-line reverse"
+                    src="assets/images/arch-line-reverse.svg" alt="FreeBootstrap.net image placeholder"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
+                <h3 class="fs-5 mb-4">Choose Your Plan</h3>
+                <p>Select from flexible savings plans or fixed deposits matching your financial goals and capacity.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1700"><img class="arch-line"
+                    src="assets/images/arch-line.svg" alt="FreeBootstrap.net image placeholder"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
+                <h3 class="fs-5 mb-4">Save & Earn</h3>
+                <p>Make contributions according to yourschedule. Watch your wealth grow with regular interest credits.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
+              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Withdraw & Share</h3>
+                  <p>Withdraw your savings plus earned interest. Refer friends and earn bonuses while growing the
+                    community.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End How it works-->
+
+      <!-- ======= Stats =======-->
+      <section class="stats__v3 section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="rounded-borders">
+                  <div class="rounded-border-1"></div>
+                  <div class="rounded-border-2"></div>
+                  <div class="rounded-border-3"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="100" data-purecounter-duration="2">0</span><span>%</span></h3>
+                    <p class="mb-0">Customer Satisfaction</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"> <span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="200" data-purecounter-duration="2">0</span><span>%+</span></h3>
+                    <p class="mb-0">Revenue Increase</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="20" data-purecounter-duration="2">0</span><span>x</span></h3>
+                    <p class="mb-0">Business Growth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Stats-->
+
+      <!-- ======= Subscriptions =======-->
+      <section class="section services__v3" id="services">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Our subscriptions</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Empowering Financial Innovation Through
+                Cutting-Edge Services
+              </h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div><span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M32 12c-2.21 0-4 1.79-4 4v8h-2v-8c0-3.31 2.69-6 6-6s6 2.69 6 6v8h-2v-8c0-2.21-1.79-4-4-4z"
+                          fill="currentColor" />
+                        <path
+                          d="M44 28H20c-2.21 0-4 1.79-4 4v12c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V32c0-2.21-1.79-4-4-4zm2 16c0 1.1-.9 2-2 2H20c-1.1 0-2-.9-2-2V32c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v12z"
+                          fill="currentColor" />
+                        <path d="M26 36h12v2H26zM26 40h8v2h-8z" fill="currentColor" />
+                        <circle cx="32" cy="32" r="2" fill="currentColor" />
+                        <path d="M38 22h-2v4h2v-4zM28 22h-2v4h2v-4z" fill="currentColor" />
+                        <path d="M34 48h-4v4h4v-4z" fill="currentColor" />
+                      </g>
+                    </svg></span>
+                  <h3 class="fs-5 mb-3">Savings Plans</h3>
+                  <p class="mb-4">Making saving easy and flexible. Whether you prefer to save daily, weekly, or yearly,
+                    we have a plan tailored to your goals. Get interest on your savings without the need for a large
+                    initial deposit.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div><span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M52 16H12a4 4 0 0 0-4 4v24a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V20a4 4 0 0 0-4-4zm2 28a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V20a2 2 0 0 1 2-2h40a2 2 0 0 1 2 2v24z"
+                          fill="currentColor" />
+                        <path d="M20 24h24v4H20zM20 32h16v2H20zM20 36h12v2H20zM20 40h20v2H20z" fill="currentColor" />
+                        <path d="M44 32h4v10h-4z" fill="currentColor" />
+                        <path d="M38 48h-4v4h4v-4zM30 48h-4v4h4v-4z" fill="currentColor" />
+                        <path d="M16 24h2v18h-2z" fill="currentColor" />
+                      </g>
+                    </svg></span>
+                  <h3 class="fs-5 mb-3">Fixed Deposit</h3>
+                  <p class="mb-4">Lock in your funds with fixed deposit plans that offer guaranteed returns. With
+                    predefined interest rates and set periods, you can rest assured that your investment grows steadily
+                    over time.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div>
+                  <span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M50.327 4H25.168a6.007 6.007 0 0 0-6 6v5.11h-8.375a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H34.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H21.168V10a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L47.1 6h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V10a6.007 6.007 0 0 0-6-6ZM38.633 17.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V35.6a6.789 6.789 0 0 0-4.333 2.85H10.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V18.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H44.94Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M55.327 14.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H25.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V15.6a1 1 0 0 0-1-1Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M41.185 54.52a1 1 0 0 0 0-2h-6.891a1 1 0 0 0 0 2ZM24.713 28.383a.853.853 0 1 1-.835 1.028.998.998 0 0 0-1.184-.775c-1.765.61-.18 2.94 1.017 3.265-.271 1.919 2.27 1.926 2-.003a2.852 2.852 0 0 0-.998-5.515.851.851 0 1 1 .821-1.084 1 1 0 0 0 1.926-.54 2.857 2.857 0 0 0-1.749-1.893v-.518a1 1 0 0 0-2 0v.521a2.852 2.852 0 0 0 1.002 5.514Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M24.713 36.43a9.092 9.092 0 0 0 9.082-9.082c-.499-12.047-17.666-12.045-18.163 0a9.092 9.092 0 0 0 9.08 9.082Zm0-16.163a7.09 7.09 0 0 1 7.082 7.081c-.371 9.388-13.793 9.387-14.163 0a7.09 7.09 0 0 1 7.08-7.081ZM46.413 37.53l-4.757 4.757-1.68-1.68a1 1 0 0 0-1.413 1.415l2.386 2.386a1 1 0 0 0 1.414 0l5.464-5.464a1 1 0 0 0-1.414-1.414Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  <h3 class="fs-5 mb-3">Food Commerce</h3>
+                  <p class="mb-4">We offer an e-commerce platform for you to purchase food directly from farm. No more
+                    middlement that spike the cost of food, purchase what you need, get instant access to food at
+                    farmers price.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div><span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M42.327 8H21.168a6.007 6.007 0 0 0-6 6v5.11H9.793a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H28.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H17.168V14a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L39.1 10h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V14a6.007 6.007 0 0 0-6-6ZM32.633 21.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V39.6a6.789 6.789 0 0 0-4.333 2.85H14.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V22.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H38.94Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M47.327 18.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H21.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V19.6a1 1 0 0 0-1-1Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M35.185 54.52a1 1 0 0 0 0-2h-6.891a1 1 0 0 0 0 2ZM20.713 32.383a.853.853 0 1 1-.835 1.028.998.998 0 0 0-1.184-.775c-1.765.61-.18 2.94 1.017 3.265-.271 1.919 2.27 1.926 2-.003a2.852 2.852 0 0 0-.998-5.515.851.851 0 1 1 .821-1.084 1 1 0 0 0 1.926-.54 2.857 2.857 0 0 0-1.749-1.893v-.518a1 1 0 0 0-2 0v.521a2.852 2.852 0 0 0 1.002 5.514Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M20.713 40.43a9.092 9.092 0 0 0 9.082-9.082c-.499-12.047-17.666-12.045-18.163 0a9.092 9.092 0 0 0 9.08 9.082Zm0-16.163a7.09 7.09 0 0 1 7.082 7.081c-.371 9.388-13.793 9.387-14.163 0a7.09 7.09 0 0 1 7.08-7.081ZM40.413 41.53l-4.757 4.757-1.68-1.68a1 1 0 0 0-1.413 1.415l2.386 2.386a1 1 0 0 0 1.414 0l5.464-5.464a1 1 0 0 0-1.414-1.414Z"
+                          fill="currentColor" opacity="1" data-original="#000000"></path>
+                        <path
+                          d="M52 24h-4v-2h4a2 2 0 0 1 2 2v2h-2v-2zM52 30h-4v2h4a2 2 0 0 1 2-2v-2h-2zM52 36h-4v2h4a2 2 0 0 1 2-2v-2h-2z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  <h3 class="fs-5 mb-3">Referral Bonus</h3>
+                  <p class="mb-4">Invite friends to join Terasave and earn bonuses for every successful referral. Share
+                    the goodness of financial growth and enjoy rewards as your network expands.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div><span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M44.327 8H19.168a6.007 6.007 0 0 0-6 6v5.11H4.793a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H28.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V35.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H15.168V14a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L41.1 10h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V14a6.007 6.007 0 0 0-6-6ZM32.633 21.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V39.6a6.789 6.789 0 0 0-4.333 2.85H4.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V22.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H38.94Z"
+                          fill="currentColor" opacity="1"></path>
+                        <path
+                          d="M49.327 18.6a1 1 0 0 0-1 1V58a4.004 4.004 0 0 1-4 4H19.168a4.004 4.004 0 0 1-4-4V47.45a1 1 0 0 0-2 0V58a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V19.6a1 1 0 0 0-1-1Z"
+                          fill="currentColor" opacity="1"></path>
+
+                        <!-- Handshake element representing mutual agreement -->
+                        <path d="M22 46c-1.5 1-2.5 2.5-2.5 4.5 0 2.5 2 4.5 4.5 4.5 1.5 0 2.5-.5 3.5-1.5"
+                          stroke="currentColor" fill="none" stroke-width="1.5" />
+                        <path d="M42 46c1.5 1 2.5 2.5 2.5 4.5 0 2.5-2 4.5-4.5 4.5-1.5 0-2.5-.5-3.5-1.5"
+                          stroke="currentColor" fill="none" stroke-width="1.5" />
+                        <path d="M30 44l2-4 2 4" fill="currentColor" />
+                        <path d="M32 40v6" stroke="currentColor" stroke-width="1.5" />
+
+                        <!-- Two interconnected arrows showing mutual exchange -->
+                        <path d="M26 28l-3 3 3 3" stroke="currentColor" fill="none" stroke-width="1.5" />
+                        <path d="M23 31h6" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M38 28l3 3-3 3" stroke="currentColor" fill="none" stroke-width="1.5" />
+                        <path d="M35 31h6" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M32 26v10" stroke="currentColor" stroke-width="1.5" />
+
+                        <!-- Equal sign representing fairness and balance -->
+                        <path d="M28 22h8v1.5h-8zM28 25h8v1.5h-8z" fill="currentColor" />
+                      </g>
+                    </svg>
+                  </span>
+                  <h3 class="fs-5 mb-3">Mutual Benefit</h3>
+                  <p class="mb-4">We are committed to providing a platform that not only helps you save but also
+                    contributes to the greater good. By saving with us, you are part of a community that is working
+                    towards a sustainable future.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                <div><span class="icon mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve">
+                      <g>
+                        <path
+                          d="M50.327 4H25.168a6.007 6.007 0 0 0-6 6v5.11h-8.375a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H34.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H21.168V10a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L47.1 6h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V10a6.007 6.007 0 0 0-6-6ZM38.633 17.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V35.6a6.789 6.789 0 0 0-4.333 2.85H10.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V18.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H44.94Z"
+                          fill="currentColor" opacity="1"></path>
+                        <path
+                          d="M55.327 14.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H25.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V15.6a1 1 0 0 0-1-1Z"
+                          fill="currentColor" opacity="1"></path>
+
+                        <!-- Credit Card Elements -->
+                        <rect x="18" y="26" width="28" height="18" rx="2" fill="none" stroke="currentColor"
+                          stroke-width="1.5" />
+                        <rect x="22" y="30" width="20" height="3" fill="currentColor" />
+                        <rect x="22" y="36" width="12" height="2" fill="currentColor" />
+                        <rect x="22" y="40" width="8" height="2" fill="currentColor" />
+                        <circle cx="40" cy="38" r="2" fill="currentColor" />
+
+                        <!-- Payment/Chip Symbol -->
+                        <rect x="36" y="40" width="6" height="4" rx="1" fill="none" stroke="currentColor"
+                          stroke-width="1" />
+                        <path d="M38 41h2M38 42h2M38 43h2" stroke="currentColor" stroke-width="1" />
+
+                        <!-- Money Symbols -->
+                        <path d="M28 22h2v2h-2zM32 22h2v2h-2zM36 22h2v2h-2z" fill="currentColor" />
+                      </g>
+                    </svg>
+                  </span>
+                  <h3 class="fs-5 mb-3">Wallet System</h3>
+                  <p class="mb-4">Our user-friendly wallet system allows you to manage your funds effortlessly. Deposit,
+                    withdraw, and transfer money with ease, ensuring that your financial transactions are smooth and
+                    secure.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#"><span
+                    class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read more</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services-->
+
+      <!-- ======= Testimonials =======-->
+      <section class="section testimonials__v2" id="testimonials">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-5 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Testimonials</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">What Our Users Are Saying</h2>
+              <p data-aos="fade-up" data-aos-delay="200">Real Stories of Success and Satisfaction from Our Clients</p>
+            </div>
+          </div>
+          <div class="row g-4" data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  Before Terasave, I struggled to save consistently because most platforms required a large initial
+                  deposit or had rigid schedules. The ₦1,500 minimum entry and the option to contribute daily or weekly
+                  changed everything for me. It fits perfectly with my income flow, and I’m finally seeing my savings
+                  grow without any financial pressure. Terasave truly makes wealth creation accessible to everyone.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-2-min.jpg"
+                      alt="FreeBootstrap.net image placeholder"></div>
+                  <div class="lh-base"><strong class="d-block">Djotchou Cebastien</strong>
+                    <span>Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  The combination of saving and the Food Commerce platform is a game-changer. I'm earning great interest
+                  on my savings, but the real benefit is the money I save on groceries. Being able to buy fresh produce
+                  directly from the farm at farmer's prices has cut my household food bill by a significant amount.
+                  Terasave is helping me build my future while making my present more affordable.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-1-min.jpg"
+                      alt="FreeBootstrap.net image placeholder"></div>
+                  <div class="lh-base"><strong class="d-block">Itunu Akintoye</strong><span>Social Media Manager</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial rounded-4 p-4">
+                <blockquote class="mb-3">
+                  &ldquo;
+                  I was initially skeptical about the returns, but Terasave delivered. The interest rates are highly
+                  competitive, and the platform is incredibly secure and reliable. I appreciate the transparency and the
+                  easy-to-use Wallet System for managing my funds. Knowing my money is growing steadily and securely,
+                  with the potential for ₦40,000 interest on my savings goal, gives me immense peace of mind.
+                  &rdquo;
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/person-sq-5-min.jpg"
+                      alt="FreeBootstrap.net image placeholder"></div>
+                  <div class="lh-base"><strong class="d-block">Clinton</strong><span>Small Business Owner</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials-->
+
+      <!-- ======= FAQ =======-->
+      <section class="section faq__v2" id="faq">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
+                data-aos="fade-up" data-aos-delay="0">FAQ</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your
+                vision to life. Once complete, effortlessly share your creations.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-content">
+                <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"> What is the minimum amount required to start saving
+                        with Terasave, and how flexible are the plans? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
+                      <div class="accordion-body">Terasave is designed for maximum accessibility and flexibility.
+                        You can start your savings journey with a minimum contribution of just ₦1,500.
+                        We offer flexible savings plans that allow you to choose your contribution frequency—daily,
+                        weekly, or monthly—to perfectly suit your personal financial rhythm and goals.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo"> How does Terasave help me earn interest, and what
+                        are the potential returns? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
+                      <div class="accordion-body">
+                        Terasave offers attractive interest rates on your savings.
+                        Our model allows users to earn a significant ₦40,000 interest
+                        for every ₦136,500 saved in your account.
+                        This goal is attainable through consistent contributions over time,
+                        without the pressure of requiring a large, one-time lump sum deposit.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"> What is the "Food Commerce" platform, and how does
+                        it benefit me? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
+                      <div class="accordion-body">The Food Commerce platform is Terasave's unique e-commerce feature
+                        that allows you to purchase food
+                        directly from the farm. This eliminates the need for middlemen who often spike the cost of food.
+                        By purchasing what you need at the farmer's price, you gain instant access to affordable,
+                        fresh food, helping you reduce your household expenses and combat the rising cost of basic
+                        necessities.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour"> What types of savings and investment products does
+                        Terasave offer? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
+                      <div class="accordion-body">
+                        <strong>Savings Plans:</strong> Flexible plans for daily, weekly, or yearly contributions with
+                        interest. <br>
+                        <strong>Fixed Deposit:</strong> Lock in funds for set periods with predefined, guaranteed
+                        interest rates. <br>
+                        <strong>Referral Bonus:</strong> Earn bonuses and rewards for inviting friends and family to
+                        join Terasave. <br>
+                        <strong>Wallet System:</strong> A user-friendly system for effortless deposits, withdrawals, and
+                        transfers.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive"> Is Terasave only about saving, or does it offer
+                        other benefits? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
+                      <div class="accordion-body">
+                        Terasave is more than just a savings platform; it is a community-focused initiative built on a
+                        Mutual Benefit model.
+                        By saving with us, you are not only growing your personal wealth but also contributing to a
+                        sustainable future by
+                        supporting agricultural producers directly through our Food Commerce platform. This commitment
+                        to the greater
+                        good helps foster a culture of saving and investment that transforms lives and builds a
+                        prosperous future for the community.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End FAQ-->
+      </section>
+      <!-- End FAQ-->
+
+      <!-- ======= Contact =======-->
+      <section class="section contact__v2" id="contact">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
+                data-aos="fade-up" data-aos-delay="0">Contact</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Contact Us</h2>
+              <p data-aos="fade-up" data-aos-delay="100">We are here to help you on your journey to financial freedom
+                and food security.
+                Whether you have a question about our savings plans, need support with the Food Commerce platform,
+                or want to explore partnership opportunities, the Terasave team is ready to assist.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex gap-5 flex-column">
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="icon d-block"><i class="bi bi-telephone"></i></div><span> <span
+                      class="d-block">Phone</span><strong><a href="tel:+234 805 383 9606">+234 805 383 9606</a>
+                    </strong></span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon d-block"><i class="bi bi-send"></i></div><span> <span
+                      class="d-block">Email</span><strong><a href="mailto:info@terasave.ng">info@terasave.ng</a>
+                    </strong></span>
+                </div>
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon d-block">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <span>
+                    <span class="d-block">Address</span>
+                    <address class="fw-bold">Suite C2, Nymex Plaza, Gado Nasco Road, Kubwa, <br> Abuja, Nigeria
+                    </address>
+                  </span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon d-block">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <span>
+                    <span class="d-block">Address</span>
+                    <address class="fw-bold">Shop M20 Rohal plaza Ajiran Lekki Lagos, Nigeria</address>
+                  </span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon d-block">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <span>
+                    <span class="d-block">Address</span>
+                    <address class="fw-bold">No 2 Oluwatosin dada str Elemoro, Lagos, Nigeria</address>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <form id="contactForm">
+                  <div class="row gap-3 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="name">Name</label>
+                      <input class="form-control" id="name" type="text" name="name" required="">
+                    </div>
+                    <div class="col-md-12">
+                      <label class="mb-2" for="email">Email</label>
+                      <input class="form-control" id="email" type="email" name="email" required="">
+                    </div>
+                  </div>
+                  <div class="row gap-3 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="subject">Subject</label>
+                      <input class="form-control" id="subject" type="text" name="subject">
+                    </div>
+                  </div>
+                  <div class="row gap-3 gap-md-0 mb-3">
+                    <div class="col-md-12">
+                      <label class="mb-2" for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required=""></textarea>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary fw-semibold" type="submit">Send Message</button>
+                </form>
+                <div class="mt-3 d-none alert alert-success" id="successMessage">Message sent successfully!</div>
+                <div class="mt-3 d-none alert alert-danger" id="errorMessage">Message sending failed. Please try again
+                  later.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact-->
+
+      <!-- ======= Footer =======-->
+      <footer class="footer pt-5 pb-5">
+        <div class="container">
+          <div class="row justify-content-between mb-5 g-xl-5">
+            <div class="col-md-4 mb-5 mb-lg-0">
+              <img class="logo light img-fluid" src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+                style="width: 100px;" alt="invalid image">
+              <p class="mb-4">Our mission is to empower you to achieve financial freedom by building
+                your savings securely while simultaneously reducing your cost of living through access to affordable,
+                farm-gate produce.
+              </p>
+            </div>
+            <div class="col-md-7">
+              <div class="row g-5">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About
+                    <li><a href="/subscriptions.html">Services</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                    <li><a href="signin.html">Sign in</a></li>
+                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                  </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                  <h3 class="mb-3">Get in Touch</h3>
+                  <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i>
+                    <span>Shop M20 Rohal plaza Ajiran Lekki Lagos, Nigeria</span>
+                  </p>
+                  <a class="d-flex mb-3" href="mailto:info@terasave.ng">
+                    <i class="bi bi-envelope-fill me-3"></i><span>info@terasave.ng</span>
+                  </a>
+                  <a class="d-flex mb-3" href="tel:+2348053839606">
+                    <i class="bi bi-telephone-fill me-3"></i><span>+2348053839606</span>
+                  </a>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Follow Us</h3>
+                  <p>
+                    Stay updated and connected with us on social media for the latest updates.
+                  </p>
+                  <div class="social-links">
+                    <a href="#" class="text-decoration-none me-3">
+                      <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none me-3">
+                      <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none me-3">
+                      <i class="fab fa-whatsapp fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none me-3">
+                      <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                      <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row credits pt-3">
+            <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+              &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              All rights reserved by Terasave.
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer-->
+
+    </main>
+  </div>
+
+  <!-- ======= Back to Top =======-->
+  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <!-- End Back to top-->
+
+  <!-- ======= Javascripts =======-->
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/gsap/gsap.min.js"></script>
+  <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/vendors/purecounter/purecounter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/send_email.js"></script>
+  <!-- End JavaScripts-->
+</body>
+
+<!-- Mirrored from freebootstrap.net/demo/nova/page-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 08:20:54 GMT -->
+
+</html>

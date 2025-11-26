@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About &mdash; TeraSave</title>
+
+    <!-- ======= Favico =======-->
+    <link rel="icon" href="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 1000px" />
+    <!-- End Fav Ico -->
+
+    <!-- ======= Google Font =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- End Google Font-->
+
+    <!-- ======= Styles =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet" />
+    <!-- End Styles-->
+
+    <!-- ======= Theme Style =======-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- End Theme Style-->
+
+    <!-- ======= Apply theme =======-->
+    <script>
+        // Apply the theme as early as possible to avoid flicker
+        (function () {
+            const storedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-bs-theme", storedTheme);
+        })();
+    </script>
+
+    <style>
+        .social-links a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .core-value {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px 25px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .core-value:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .core-value i {
+            background-color: #e9f7ef;
+            color: #28a745;
+            /* padding: 15px; */
+            /* margin-bottom: 20px; */
+            display: inline-block;
+            /* text-align: left; */
+        }
+
+        .core-value h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .core-value p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+        <!-- ======= Header =======-->
+        <header class="fbs__net-navbar navbar navbar-expand-lg relative dark">
+            <div class="container d-flex align-items-center justify-content-between">
+
+
+                <!-- Start Logo-->
+                <a class="navbar-brand w-auto" href="/index.html">
+
+
+                    <img class="logo dark img-fluid" src="assets/images/logo/TeraSave_logo_1536x1024.png"
+                        style="width: 100px;" alt="invalid image">
+                    <img class="logo light img-fluid"
+                        src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                        alt="invalid image">
+
+                </a>
+                <!-- End Logo-->
+
+                <!-- Start offcanvas-->
+                <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+                    aria-labelledby="fbs__net-navbarsLabel">
+
+
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-header-logo">
+
+                            <a class="logo-link" id="fbs__net-navbarsLabel" href="/index.html">
+                                <!-- logo dark--><img class="logo dark img-fluid"
+                                    src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+                                    style="width: 100px;" alt="invalid image">
+
+                                <!-- logo light--><img class="logo light img-fluid"
+                                    src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+                                    style="width: 100px;" alt="invalid image">
+                            </a>
+
+                        </div>
+                        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body align-items-lg-center">
+
+                        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page"
+                                    href="/index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link scroll-link"
+                                    href="/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link scroll-link"
+                                    href="/subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link scroll-link" href="/contact.html">Contact </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End offcanvas-->
+
+                <div class="d-flex align-items-center justify-content-between"
+                    style="display: flex; align-items: center; gap: 15px;">
+                    <div class="" data-aos="fade-up" data-aos-delay="300">
+                        <a class="btn btn-white-outline" href="#">Login</a>
+                    </div>
+
+
+                    <div class="ms-auto w-auto">
+                        <div class="header-social d-flex align-items-center gap-1">
+                            <a class="btn btn-primary py-2" href="#">
+                                Create Account
+                            </a>
+
+                            <!-- Toggle Button Dark and Light Mode-->
+                            <a id="themeToggleBtn" href="#"><i class="bi" id="themeIcon"></i></a>
+
+                            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+                                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars"
+                                aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+                                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="21" x2="3" y1="6" y2="6"></line>
+                                    <line x1="15" x2="3" y1="12" y2="12"></line>
+                                    <line x1="17" x2="3" y1="18" y2="18"></line>
+                                </svg>
+                                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header-->
+
+        <!-- ======= Main =======-->
+        <main>
+            <!-- ======= About =======-->
+            <section class="about__v4 section first-section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 order-md-2">
+                            <div class="row justify-content-end">
+                                <div class="col-md-11 mb-4 mb-md-0">
+                                    <span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                                        data-aos-delay="0">About us</span>
+                                    <div data-aos="fade-up" data-aos-delay="200">
+                                        <p>Welcome to Terasave, your trusted partner in building a financially secure
+                                            future. We understand
+                                            that traditional savings methods can sometimes feel restrictive, and
+                                            accessing meaningful returns
+                                            on your hard-earned money can seem complicated. That's why we've created a
+                                            seamless and reliable
+                                            online platform designed with you in mind.</p>
+                                        <p>At Terasave, we believe that everyone should have the opportunity to grow
+                                            their wealth
+                                            effortlessly. Our unique approach allows you to save based on a plan that
+                                            suits your financial
+                                            rhythm – whether it's daily, weekly, or monthly contributions starting from
+                                            as low as N1,500. </p>
+                                    </div>
+                                    <!-- <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+                                        Key Values and Vision
+                                    </h4>
+                                    <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features"
+                                        data-aos="fade-up" data-aos-delay="400">
+                                        <li class="d-flex align-items-center gap-2">
+                                            <span class="icon rounded-circle text-center"><i
+                                                    class="bi bi-check"></i></span><span class="text">Innovation</span>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <span class="icon rounded-circle text-center"><i
+                                                    class="bi bi-check"></i></span><span class="text">Security</span>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <span class="icon rounded-circle text-center"><i
+                                                    class="bi bi-check"></i></span><span class="text">User-Centric
+                                                Design </span>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <span class="icon rounded-circle text-center"><i
+                                                    class="bi bi-check"></i></span><span
+                                                class="text">Transparency</span>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <span class="icon rounded-circle text-center"><i
+                                                    class="bi bi-check"></i></span><span class="text">Empowerment</span>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-wrap position-relative"><img class="img-fluid rounded-4"
+                                    src="assets/images/img/img8.png" alt="FreeBootstrap.net image placeholder"
+                                    data-aos="fade-up" data-aos-delay="0">
+                                <!-- <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"
+                                            style="color: #f7c400;"></i></div>
+                                    <div>
+                                        <h3 class="text-uppercase fw-bold">Mission Statement</h3>
+                                        <p class="fs-5 mb-0">Our mission is to empower individuals to achieve their
+                                            financial goals by
+                                            providing a secure, flexible, and rewarding platform for savings and
+                                            investment. We are committed
+                                            to making wealth creation accessible to everyone through innovative and
+                                            user-friendly solutions
+                                        </p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About-->
+
+            <!-- ======= Features =======-->
+            <section class="section features__v2" id="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                                <div class="row">
+                                    <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                                        <div class="row">
+                                            <div class="col-lg-11">
+                                                <div class="h-100 flex-column justify-content-between d-flex">
+                                                    <div>
+                                                        <h2 class="mb-4">Why Choose us</h2>
+                                                        <p class="mb-5">Choosing a financial partner is a decision that
+                                                            impacts your future.
+                                                            Terasave is not just a savings platform; it is a
+                                                            comprehensive solution designed to
+                                                            address the interconnected challenges of financial and food
+                                                            security in Nigeria. Our
+                                                            unique, integrated approach empowers you to build wealth
+                                                            while simultaneously reducing
+                                                            your cost of living.</p>
+                                                    </div>
+                                                    <!-- <div class="align-self-start"><a class="glightbox btn btn-play d-inline-flex align-items-center gap-2" href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video"><i class="bi bi-play-fill"></i> Watch the Video</a></div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-11">
+                                                <div class="row">
+                                                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                                                        <div class="icon text-center mb-4"><i
+                                                                class="bi bi-person-check fs-4" vfds></i></div>
+                                                        <h3 class="fs-6 fw-bold mb-3">User-Friendly Interface</h3>
+                                                        <p>Easy navigation with responsive design for various devices.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                                                        <div class="icon text-center mb-4"><i
+                                                                class="bi bi-graph-up fs-4"></i></div>
+                                                        <h3 class="fs-6 fw-bold mb-3">Financial Analytics</h3>
+                                                        <p>Budget tracking, expense categorization, and personalized
+                                                            insights.</p>
+                                                    </div>
+                                                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                                                        <div class="icon text-center mb-4"><i
+                                                                class="bi bi-headset fs-4"></i></div>
+                                                        <h3 class="fs-6 fw-bold mb-3">Customer Support</h3>
+                                                        <p>24/7 service via chat, email, phone, and a detailed help
+                                                            center.</p>
+                                                    </div>
+                                                    <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                                                        <div class="icon text-center mb-4"><i
+                                                                class="bi bi-shield-lock fs-4"></i></div>
+                                                        <h3 class="fs-6 fw-bold mb-3">Security Features</h3>
+                                                        <p>Data encryption, fraud detection, and prevention mechanisms.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Features-->
+
+            <!-- ======= About - Core Values =======-->
+            <section class="section about__v3">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-5 mx-auto text-center">
+                            <h2 class="section-title fw-bold mb-3">Our Core Values</h2>
+                            <p>
+                                Our core values define our principles and guide our actions in
+                                delivering exceptional results.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="core-value">
+                                <i class="bi bi-eye-fill fs-4 rounded-3 text-center"></i>
+                                <h3 class="fs-5 fw-bold">Vision</h3>
+                                <p>
+                                    To build a future where financial freedom and affordable nutrition are a reality for
+                                    all Nigerians. We envision a community-powered platform that is the definitive
+                                    partner for wealth creation and smart spending.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="core-value ">
+                                <i class="bi bi-bullseye fs-4 rounded-3 text-center"></i>
+                                <h3 class="fs-5 fw-bold">Mission</h3>
+                                <p>
+                                    We democratise financial freedom by enabling savings from ₦1,500 and giving
+                                    Nigerians access to affordable, fresh produce. Through innovation, flexibility, and
+                                    a community-powered system, we remove financial barriers and empower smarter living
+                                    for all.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="core-value">
+                                <i class="bi bi-lightbulb-fill fs-4 rounded-3 text-center"></i>
+                                <h3 class="fs-5 fw-bold">Our Solution</h3>
+                                <p>
+                                    TeraSave tackles the challenges of saving and rising living costs through one
+                                    seamless solution. We blend easy savings—starting at just ₦1,500—with a food
+                                    platform that connects you straight to farmers. This combined model grows your
+                                    finances while lowering food expenses by up to 50%, offering genuine, full-spectrum
+                                    financial empowerment. </p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="core-value text-center">
+                                <i class="bi bi-star-fill fs-4 rounded-3"></i>
+                                <img src="./assets/images/img/img8.png" width="100" alt="">
+                                <h3 class="fs-5 fw-bold">Excellence</h3>
+                                <p>We pursue excellence in everything we do.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- End About - Core Values -->
+
+            <!-- ======= Team =======-->
+            <section class="section team" id="team">
+                <div class="container">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="">
+                        <div class="col-md-6 mx-auto text-center">
+                            <h2 class="h2 fw-bold mb-3">Our Team</h2>
+                            <p class="mb-4 mb-lg-5">
+                                Meet our team members who are the driving force behind our success. Their expertise, are
+                                dedication, and passion fuel our mission to deliver exceptional solutions and services
+                                to our clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                        <div class="col mb-5" data-aos="fade-up" data-aos-delay="">
+                            <!-- Team-->
+                            <div class="w-75 text-center mx-auto">
+                                <img class="img-fluid rounded-3 mb-4" src="assets/images/person-sq-2-min.jpg"
+                                    alt="Image Description" />
+                                <h5 class="mb-1 fw-bold">Akintoye Rufus</h5>
+                                <span class="d-block">Founder / CEO</span>
+                            </div>
+                            <!-- End Team-->
+                        </div>
+                        <!-- End Col-->
+                        <div class="col mb-5" data-aos="fade-up" data-aos-delay="100">
+                            <!-- Team-->
+                            <div class="w-75 text-center mx-auto">
+                                <img class="img-fluid rounded-3 mb-4" src="assets/images/person-sq-1-min.jpg"
+                                    alt="Image Description" />
+                                <h5 class="mb-1 fw-bold">Adun Akintoye</h5>
+                                <span class="d-block">Marketer</span>
+                            </div>
+                            <!-- End Team-->
+                        </div>
+                        <!-- End Col-->
+                        <div class="col mb-5" data-aos="fade-up" data-aos-delay="200">
+                            <!-- Team-->
+                            <div class="w-75 text-center mx-auto">
+                                <img class="img-fluid rounded-3 mb-4" src="assets/images/person-sq-3-min.jpg"
+                                    alt="Image Description" />
+                                <h5 class="mb-1 fw-bold">Clinton</h5>
+                                <span class="d-block">IT Manager</span>
+                            </div>
+                            <!-- End Team-->
+                        </div>
+                        <!-- End Col-->
+
+                    </div>
+                </div>
+            </section>
+            <!-- End Team-->
+
+            <!-- ======= Stats =======-->
+            <section class="section stats" id="stats">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center" data-aos="fade-up" data-aos-delay="">
+                        <div class="col-md-5 mb-4">
+                            <h2 class="h2 fw-bold mb-4">
+                                Celebrating Milestones in Financial Inclusion
+                            </h2>
+                            <p class="mb-4">
+                                With flexible savings solutions starting from just ₦1,500,
+                                and an innovative dual-platform approach,
+                                we're revolutionizing how Nigerians achieve financial freedom while reducing living
+                                costs.
+                            </p>
+                            <div class="row g-2">
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="100"
+                                            data-purecounter-duration="2">0</span><span>%</span>
+                                    </h2>
+                                    <p>Commitment to Financial Freedom</p>
+                                </div>
+
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="50"
+                                            data-purecounter-duration="2">0</span><span>%</span>
+                                    </h2>
+                                    <p>Food Cost Savings</p>
+                                </div>
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2"
+                                            data-purecounter-duration="2">0</span><span>M</span><span>+</span>
+                                    </h2>
+                                    <p>Future User Target</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row justify-content-end">
+                                <div class="col-12 col-lg-10 position-relative overflow-hidden">
+                                    <img class="img-fluid rounded-3" src="assets/images/img/img7.jpg"
+                                        alt="invalid image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Stats -->
+
+
+        </main>
+        <!-- End Main -->
+
+        <!-- ======= Footer =======-->
+        <footer class="footer pt-5 pb-5">
+            <div class="container">
+                <!-- <div class="row mb-5 pb-4">
+            <div class="col-md-7">
+              <h2 class="fs-5">Join our newsletter</h2>
+              <p>Stay updated with our latest templates and offers—join our newsletter today!</p>
+            </div>
+            <div class="col-md-5">
+              <form class="d-flex gap-2">
+                <input class="form-control" type="email" placeholder="Email your email" required="">
+                <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div> -->
+                <div class="row justify-content-between mb-5 g-xl-5">
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <!-- <h3 class="mb-3">About</h3> -->
+                        <img class="logo light img-fluid"
+                            src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                            alt="invalid image">
+                        <p class="mb-4">Our mission is to empower you to achieve financial freedom by building
+                            your savings securely while simultaneously reducing your cost of living through access to
+                            affordable,
+                            farm-gate produce.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                <h3 class="mb-3">Quick Links</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="/index.html">Home</a></li>
+                                    <li><a href="/about.html">About
+                                    <li><a href="/subscriptions.html">Services</a></li>
+                                    <li><a href="signup.html">Register</a></li>
+                                    <li><a href="signin.html">Sign in</a></li>
+                                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                                <h3 class="mb-3">Get in Touch</h3>
+                                <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i>
+                                    <span>Shop M20 Rohal plaza Ajiran Lekki Lagos, Nigeria</span>
+                                </p>
+                                <a class="d-flex mb-3" href="mailto:info@terasave.ng">
+                                    <i class="bi bi-envelope-fill me-3"></i><span>info@terasave.ng</span>
+                                </a>
+                                <a class="d-flex mb-3" href="tel:+2348053839606">
+                                    <i class="bi bi-telephone-fill me-3"></i><span>+2348053839606</span>
+                                </a>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                <h3 class="mb-3">Follow Us</h3>
+                                <p>
+                                    Stay updated and connected with us on social media for the latest updates.
+                                </p>
+                                <div class="social-links">
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-whatsapp fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-linkedin-in fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row credits pt-3">
+                    <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved by Terasave.
+                    </div>
+                    <!-- <div class="col-xl-4 justify-content-start justify-content-xl-end quick-links d-flex flex-column flex-xl-row text-center text-xl-start gap-3">
+              <a href="#">Terms and Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+            </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer-->
+    </div>
+
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/send_email.js"></script>
+    <!-- End JavaScripts-->
+</body>
+
+<!-- Mirrored from freebootstrap.net/demo/nova/page-about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 08:20:59 GMT -->
+
+</html>

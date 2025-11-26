@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Subscriptions &mdash; TeraSave </title>
+
+    <!-- ======= Favico =======-->
+    <link rel="icon" href="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 1000px;">
+    <!-- End Fav Ico -->
+
+    <!-- ======= Google Font =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- End Google Font-->
+
+    <!-- ======= Styles =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+    <!-- End Styles-->
+
+    <!-- ======= Theme Style =======-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- End Theme Style-->
+
+    <!-- ======= Apply theme =======-->
+    <script>
+        // Apply the theme as early as possible to avoid flicker
+        (function () {
+            const storedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-bs-theme', storedTheme);
+        })();
+    </script>
+
+
+    <style>
+        .social-links a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+
+
+        <!-- ======= Header =======-->
+        <header class="fbs__net-navbar navbar navbar-expand-lg relative dark">
+            <div class="container d-flex align-items-center justify-content-between">
+
+
+                <!-- Start Logo-->
+                <a class="navbar-brand w-auto" href="http://127.0.0.1:5500/index.html">
+
+
+                    <img class="logo dark img-fluid" src="assets/images/logo/TeraSave_logo_1536x1024.png"
+                        style="width: 100px;" alt="invalid image">
+                    <img class="logo light img-fluid"
+                        src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                        alt="invalid image">
+
+                </a>
+                <!-- End Logo-->
+
+                <!-- Start offcanvas-->
+                <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+                    aria-labelledby="fbs__net-navbarsLabel">
+
+
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-header-logo">
+
+                            <a class="logo-link" id="fbs__net-navbarsLabel" href="/index.html">
+                                <!-- logo dark--><img class="logo dark img-fluid"
+                                    src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+                                    style="width: 100px;" alt="invalid image">
+
+                                <!-- logo light--><img class="logo light img-fluid"
+                                    src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png"
+                                    style="width: 100px;" alt="invalid image">
+                            </a>
+
+                        </div>
+                        <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body align-items-lg-center">
+
+                        <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page"
+                                    href="/index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link scroll-link" href="/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link scroll-link"
+                                    href="/subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link scroll-link" href="/contact.html">Contact </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End offcanvas-->
+
+                <div class="d-flex align-items-center justify-content-between"
+                    style="display: flex; align-items: center; gap: 15px;">
+                    <div class="" data-aos="fade-up" data-aos-delay="300">
+                        <a class="btn btn-white-outline" href="#">Login</a>
+                    </div>
+
+
+                    <div class="ms-auto w-auto">
+                        <div class="header-social d-flex align-items-center gap-1">
+                            <a class="btn btn-primary py-2" href="page-contact.html">
+                                Create Account
+                            </a>
+
+                            <!-- Toggle Button Dark and Light Mode-->
+                            <a id="themeToggleBtn" href="#"><i class="bi" id="themeIcon"></i></a>
+
+                            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+                                data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars"
+                                aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+                                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="21" x2="3" y1="6" y2="6"></line>
+                                    <line x1="15" x2="3" y1="12" y2="12"></line>
+                                    <line x1="17" x2="3" y1="18" y2="18"></line>
+                                </svg>
+                                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header-->
+
+        <!-- ======= Main =======-->
+        <main>
+            <!-- ======= Page Title =======-->
+            <section class="section pagetitle__v1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>Subscriptions</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Subscriptions =======-->
+            <section class="section services__v3" id="services">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
+                                data-aos="fade-up" data-aos-delay="0">Our subscriptions</span>
+                            <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Empowering Financial Innovation
+                                Through
+                                Cutting-Edge Services
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div><span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M32 12c-2.21 0-4 1.79-4 4v8h-2v-8c0-3.31 2.69-6 6-6s6 2.69 6 6v8h-2v-8c0-2.21-1.79-4-4-4z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M44 28H20c-2.21 0-4 1.79-4 4v12c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V32c0-2.21-1.79-4-4-4zm2 16c0 1.1-.9 2-2 2H20c-1.1 0-2-.9-2-2V32c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v12z"
+                                                    fill="currentColor" />
+                                                <path d="M26 36h12v2H26zM26 40h8v2h-8z" fill="currentColor" />
+                                                <circle cx="32" cy="32" r="2" fill="currentColor" />
+                                                <path d="M38 22h-2v4h2v-4zM28 22h-2v4h2v-4z" fill="currentColor" />
+                                                <path d="M34 48h-4v4h4v-4z" fill="currentColor" />
+                                            </g>
+                                        </svg></span>
+                                    <h3 class="fs-5 mb-3">Savings Plans</h3>
+                                    <p class="mb-4">Making saving easy and flexible. Whether you prefer to save daily,
+                                        weekly, or yearly,
+                                        we have a plan tailored to your goals. Get interest on your savings without the
+                                        need for a large
+                                        initial deposit.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div><span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M52 16H12a4 4 0 0 0-4 4v24a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V20a4 4 0 0 0-4-4zm2 28a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V20a2 2 0 0 1 2-2h40a2 2 0 0 1 2 2v24z"
+                                                    fill="currentColor" />
+                                                <path d="M20 24h24v4H20zM20 32h16v2H20zM20 36h12v2H20zM20 40h20v2H20z"
+                                                    fill="currentColor" />
+                                                <path d="M44 32h4v10h-4z" fill="currentColor" />
+                                                <path d="M38 48h-4v4h4v-4zM30 48h-4v4h4v-4z" fill="currentColor" />
+                                                <path d="M16 24h2v18h-2z" fill="currentColor" />
+                                            </g>
+                                        </svg></span>
+                                    <h3 class="fs-5 mb-3">Fixed Deposit</h3>
+                                    <p class="mb-4">Lock in your funds with fixed deposit plans that offer guaranteed
+                                        returns. With
+                                        predefined interest rates and set periods, you can rest assured that your
+                                        investment grows steadily
+                                        over time.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div>
+                                    <span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M50.327 4H25.168a6.007 6.007 0 0 0-6 6v5.11h-8.375a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H34.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H21.168V10a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L47.1 6h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V10a6.007 6.007 0 0 0-6-6ZM38.633 17.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V35.6a6.789 6.789 0 0 0-4.333 2.85H10.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V18.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H44.94Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M55.327 14.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H25.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V15.6a1 1 0 0 0-1-1Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M41.185 54.52a1 1 0 0 0 0-2h-6.891a1 1 0 0 0 0 2ZM24.713 28.383a.853.853 0 1 1-.835 1.028.998.998 0 0 0-1.184-.775c-1.765.61-.18 2.94 1.017 3.265-.271 1.919 2.27 1.926 2-.003a2.852 2.852 0 0 0-.998-5.515.851.851 0 1 1 .821-1.084 1 1 0 0 0 1.926-.54 2.857 2.857 0 0 0-1.749-1.893v-.518a1 1 0 0 0-2 0v.521a2.852 2.852 0 0 0 1.002 5.514Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M24.713 36.43a9.092 9.092 0 0 0 9.082-9.082c-.499-12.047-17.666-12.045-18.163 0a9.092 9.092 0 0 0 9.08 9.082Zm0-16.163a7.09 7.09 0 0 1 7.082 7.081c-.371 9.388-13.793 9.387-14.163 0a7.09 7.09 0 0 1 7.08-7.081ZM46.413 37.53l-4.757 4.757-1.68-1.68a1 1 0 0 0-1.413 1.415l2.386 2.386a1 1 0 0 0 1.414 0l5.464-5.464a1 1 0 0 0-1.414-1.414Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <h3 class="fs-5 mb-3">Food Commerce</h3>
+                                    <p class="mb-4">We offer an e-commerce platform for you to purchase food directly
+                                        from farm. No more
+                                        middlement that spike the cost of food, purchase what you need, get instant
+                                        access to food at
+                                        farmers price.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div><span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M42.327 8H21.168a6.007 6.007 0 0 0-6 6v5.11H9.793a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H28.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H17.168V14a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L39.1 10h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V14a6.007 6.007 0 0 0-6-6ZM32.633 21.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V39.6a6.789 6.789 0 0 0-4.333 2.85H14.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V22.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H38.94Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M47.327 18.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H21.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V19.6a1 1 0 0 0-1-1Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M35.185 54.52a1 1 0 0 0 0-2h-6.891a1 1 0 0 0 0 2ZM20.713 32.383a.853.853 0 1 1-.835 1.028.998.998 0 0 0-1.184-.775c-1.765.61-.18 2.94 1.017 3.265-.271 1.919 2.27 1.926 2-.003a2.852 2.852 0 0 0-.998-5.515.851.851 0 1 1 .821-1.084 1 1 0 0 0 1.926-.54 2.857 2.857 0 0 0-1.749-1.893v-.518a1 1 0 0 0-2 0v.521a2.852 2.852 0 0 0 1.002 5.514Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M20.713 40.43a9.092 9.092 0 0 0 9.082-9.082c-.499-12.047-17.666-12.045-18.163 0a9.092 9.092 0 0 0 9.08 9.082Zm0-16.163a7.09 7.09 0 0 1 7.082 7.081c-.371 9.388-13.793 9.387-14.163 0a7.09 7.09 0 0 1 7.08-7.081ZM40.413 41.53l-4.757 4.757-1.68-1.68a1 1 0 0 0-1.413 1.415l2.386 2.386a1 1 0 0 0 1.414 0l5.464-5.464a1 1 0 0 0-1.414-1.414Z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                                                <path
+                                                    d="M52 24h-4v-2h4a2 2 0 0 1 2 2v2h-2v-2zM52 30h-4v2h4a2 2 0 0 1 2-2v-2h-2zM52 36h-4v2h4a2 2 0 0 1 2-2v-2h-2z"
+                                                    fill="currentColor"></path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <h3 class="fs-5 mb-3">Referral Bonus</h3>
+                                    <p class="mb-4">Invite friends to join Terasave and earn bonuses for every
+                                        successful referral. Share
+                                        the goodness of financial growth and enjoy rewards as your network expands.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div><span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M44.327 8H19.168a6.007 6.007 0 0 0-6 6v5.11H4.793a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H28.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V35.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H15.168V14a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L41.1 10h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V14a6.007 6.007 0 0 0-6-6ZM32.633 21.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V39.6a6.789 6.789 0 0 0-4.333 2.85H4.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V22.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H38.94Z"
+                                                    fill="currentColor" opacity="1"></path>
+                                                <path
+                                                    d="M49.327 18.6a1 1 0 0 0-1 1V58a4.004 4.004 0 0 1-4 4H19.168a4.004 4.004 0 0 1-4-4V47.45a1 1 0 0 0-2 0V58a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V19.6a1 1 0 0 0-1-1Z"
+                                                    fill="currentColor" opacity="1"></path>
+
+                                                <!-- Handshake element representing mutual agreement -->
+                                                <path
+                                                    d="M22 46c-1.5 1-2.5 2.5-2.5 4.5 0 2.5 2 4.5 4.5 4.5 1.5 0 2.5-.5 3.5-1.5"
+                                                    stroke="currentColor" fill="none" stroke-width="1.5" />
+                                                <path
+                                                    d="M42 46c1.5 1 2.5 2.5 2.5 4.5 0 2.5-2 4.5-4.5 4.5-1.5 0-2.5-.5-3.5-1.5"
+                                                    stroke="currentColor" fill="none" stroke-width="1.5" />
+                                                <path d="M30 44l2-4 2 4" fill="currentColor" />
+                                                <path d="M32 40v6" stroke="currentColor" stroke-width="1.5" />
+
+                                                <!-- Two interconnected arrows showing mutual exchange -->
+                                                <path d="M26 28l-3 3 3 3" stroke="currentColor" fill="none"
+                                                    stroke-width="1.5" />
+                                                <path d="M23 31h6" stroke="currentColor" stroke-width="1.5" />
+                                                <path d="M38 28l3 3-3 3" stroke="currentColor" fill="none"
+                                                    stroke-width="1.5" />
+                                                <path d="M35 31h6" stroke="currentColor" stroke-width="1.5" />
+                                                <path d="M32 26v10" stroke="currentColor" stroke-width="1.5" />
+
+                                                <!-- Equal sign representing fairness and balance -->
+                                                <path d="M28 22h8v1.5h-8zM28 25h8v1.5h-8z" fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <h3 class="fs-5 mb-3">Mutual Benefit</h3>
+                                    <p class="mb-4">We are committed to providing a platform that not only helps you
+                                        save but also
+                                        contributes to the greater good. By saving with us, you are part of a community
+                                        that is working
+                                        towards a sustainable future.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div
+                                class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+                                <div><span class="icon mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64"
+                                            style="enable-background:new 0 0 64 64" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M50.327 4H25.168a6.007 6.007 0 0 0-6 6v5.11h-8.375a3.154 3.154 0 0 0-3.12 3.18v5.47a1 1 0 0 0 .724.961 3.204 3.204 0 0 1 0 6.097 1 1 0 0 0-.724.962v5.49a3.154 3.154 0 0 0 3.12 3.18H34.5c-2.147 8.057 9.408 12.135 12.77 4.441a1 1 0 0 0-1.841-.779 4.778 4.778 0 1 1-4.403-6.636c1.039-.159 2.453 1.082 3.063-.225.449-1.37-1.383-1.598-2.336-1.734V31.8a1 1 0 0 0-.72-.96 3.21 3.21 0 0 1 0-6.11 1 1 0 0 0 .72-.96v-5.48a3.154 3.154 0 0 0-3.12-3.18H21.168V10a4.004 4.004 0 0 1 4-4h3.21l1.24 3.066a3.982 3.982 0 0 0 3.708 2.503h8.826a3.984 3.984 0 0 0 3.71-2.503L47.1 6h3.228a4.004 4.004 0 0 1 4 4v1.6a1 1 0 0 0 2 0V10a6.007 6.007 0 0 0-6-6ZM38.633 17.11a1.153 1.153 0 0 1 1.12 1.18v4.792a5.234 5.234 0 0 0 0 9.405V35.6a6.789 6.789 0 0 0-4.333 2.85H10.793a1.153 1.153 0 0 1-1.12-1.18v-4.8a5.232 5.232 0 0 0 0-9.401V18.29a1.153 1.153 0 0 1 1.12-1.18Zm5.375-8.793a1.994 1.994 0 0 1-1.856 1.252h-8.826a1.991 1.991 0 0 1-1.854-1.252l-.934-2.312H44.94Z"
+                                                    fill="currentColor" opacity="1"></path>
+                                                <path
+                                                    d="M55.327 14.6a1 1 0 0 0-1 1V54a4.004 4.004 0 0 1-4 4H25.168a4.004 4.004 0 0 1-4-4V43.45a1 1 0 0 0-2 0V54a6.007 6.007 0 0 0 6 6h25.16a6.007 6.007 0 0 0 6-6V15.6a1 1 0 0 0-1-1Z"
+                                                    fill="currentColor" opacity="1"></path>
+
+                                                <!-- Credit Card Elements -->
+                                                <rect x="18" y="26" width="28" height="18" rx="2" fill="none"
+                                                    stroke="currentColor" stroke-width="1.5" />
+                                                <rect x="22" y="30" width="20" height="3" fill="currentColor" />
+                                                <rect x="22" y="36" width="12" height="2" fill="currentColor" />
+                                                <rect x="22" y="40" width="8" height="2" fill="currentColor" />
+                                                <circle cx="40" cy="38" r="2" fill="currentColor" />
+
+                                                <!-- Payment/Chip Symbol -->
+                                                <rect x="36" y="40" width="6" height="4" rx="1" fill="none"
+                                                    stroke="currentColor" stroke-width="1" />
+                                                <path d="M38 41h2M38 42h2M38 43h2" stroke="currentColor"
+                                                    stroke-width="1" />
+
+                                                <!-- Money Symbols -->
+                                                <path d="M28 22h2v2h-2zM32 22h2v2h-2zM36 22h2v2h-2z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <h3 class="fs-5 mb-3">Wallet System</h3>
+                                    <p class="mb-4">Our user-friendly wallet system allows you to manage your funds
+                                        effortlessly. Deposit,
+                                        withdraw, and transfer money with ease, ensuring that your financial
+                                        transactions are smooth and
+                                        secure.</p>
+                                </div><a
+                                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                                    href="#"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                                            class="icon-2 bi bi-arrow-right-short"> </i></span><span>Read
+                                        more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services-->
+
+            <!-- ======= Stats =======-->
+            <section class="section stats" id="stats">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center" data-aos="fade-up" data-aos-delay="">
+                        <div class="col-md-5 mb-4">
+                            <h2 class="h2 fw-bold mb-4">
+                                Celebrating Milestones in Financial Inclusion
+                            </h2>
+                            <p class="mb-4">
+                                With flexible savings solutions starting from just ₦1,500,
+                                and an innovative dual-platform approach,
+                                we're revolutionizing how Nigerians achieve financial freedom while reducing living
+                                costs.
+                            </p>
+                            <div class="row g-2">
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="100"
+                                            data-purecounter-duration="2">0</span><span>%</span>
+                                    </h2>
+                                    <p>Commitment to Financial Freedom</p>
+                                </div>
+
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="50"
+                                            data-purecounter-duration="2">0</span><span>%</span>
+                                    </h2>
+                                    <p>Food Cost Savings</p>
+                                </div>
+                                <div class="col-sm-6 stats-item">
+                                    <h2 class="fs-2 fw-bold">
+                                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2"
+                                            data-purecounter-duration="2">0</span><span>M</span><span>+</span>
+                                    </h2>
+                                    <p>Future User Target</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row justify-content-end">
+                                <div class="col-12 col-lg-10 position-relative overflow-hidden">
+                                    <img class="img-fluid rounded-3" src="assets/images/img/img7.jpg"
+                                        alt="invalid image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Stats-->
+
+            <!-- ======= CTA =======-->
+            <section class="section cta__v1 pt-0">
+                <div class="container">
+                    <div class="d-md-flex inner rounded-4 justify-content-between">
+                        <div class="col-md-9 mb-4 mb-md-0">
+                            <h2 class="fw-bold fs-3 mb-0">Not sure where to start?
+                                Share your challenges with saving or managing food costs.
+                                Our team will show you how our unique dual-platform approach can help you build wealth
+                                while reducing expenses.
+                            </h2>
+                        </div>
+                        <div class="col-md-3 w-auto d-flex justify-content-md-end text-md-end">
+                            <p class="mb-0"><a class="btn btn-white hover-outline"
+                                    href="http://127.0.0.1:5500/contact.html">Contact
+                                    us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End CTA -->
+
+        </main>
+        <!-- End Main -->
+
+        <!-- ======= Footer =======-->
+        <footer class="footer pt-5 pb-5">
+            <div class="container">
+                <div class="row justify-content-between mb-5 g-xl-5">
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <img class="logo light img-fluid"
+                            src="assets/images/logo/TeraSave_logo_1536x1024-removebg-preview.png" style="width: 100px;"
+                            alt="invalid image">
+                        <p class="mb-4">Our mission is to empower you to achieve financial freedom by building
+                            your savings securely while simultaneously reducing your cost of living through access to
+                            affordable,
+                            farm-gate produce.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                <h3 class="mb-3">Quick Links</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="/index.html">Home</a></li>
+                                    <li><a href="/about.html">About
+                                    <li><a href="/subscriptions.html">Services</a></li>
+                                    <li><a href="signup.html">Register</a></li>
+                                    <li><a href="signin.html">Sign in</a></li>
+                                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                                <h3 class="mb-3">Get in Touch</h3>
+                                <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i>
+                                    <span>Shop M20 Rohal plaza Ajiran Lekki Lagos, Nigeria</span>
+                                </p>
+                                <a class="d-flex mb-3" href="mailto:info@terasave.ng">
+                                    <i class="bi bi-envelope-fill me-3"></i><span>info@terasave.ng</span>
+                                </a>
+                                <a class="d-flex mb-3" href="tel:+2348053839606">
+                                    <i class="bi bi-telephone-fill me-3"></i><span>+2348053839606</span>
+                                </a>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                <h3 class="mb-3">Follow Us</h3>
+                                <p>
+                                    Stay updated and connected with us on social media for the latest updates.
+                                </p>
+                                <div class="social-links">
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-whatsapp fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-linkedin-in fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row credits pt-3">
+                    <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved by Terasave.
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer-->
+
+    </div>
+
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/send_email.js"></script>
+    <!-- End JavaScripts-->
+</body>
+
+</html>
